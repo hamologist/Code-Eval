@@ -19,3 +19,5 @@ for x in f.read().split('\n')[0:-1]:
 	for y in range(0, len(buzz)-1):
 		print(buzz[y], end=' ')
 	print(buzz[-1])
+
+f.close()
