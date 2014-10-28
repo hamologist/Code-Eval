@@ -5,7 +5,7 @@ def palindrome(x):
 	else:
 		return False
 
-limit = 1000
+limit = 10000
 numbers = list(range(0,limit+1))
 numbers[0] = -1
 numbers[1] = -1
@@ -23,8 +23,12 @@ while (running):
 			running = True
 			prime.append(x)
 			break
+for x in prime:
+	print("{" + str(x) + ":true}", end=', ')
 
+"""
 for x in reversed(prime):
 	if (palindrome(x)):
 		print(x)
 		break
+"""
